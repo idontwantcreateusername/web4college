@@ -1,0 +1,229 @@
+.cnt {
+	border-style: dotted;
+	margin-top: 10px;
+	padding: 30px;
+	padding-left: 10%;
+	padding-right: 10%;
+	width: 60%;
+	margin:auto
+}
+
+.cnt p::first-letter {
+  	font-size: 130%;
+	color: red;
+	font-style: italic;
+}
+.cnt2 {
+	border-style: dotted;
+	margin-top: 10px;
+	padding: 30px;
+	padding-left: 10%;
+	padding-right: 10%;
+	width: 60%;
+	margin:auto
+}
+
+.cnt2 p::first-line {
+	color: red;
+	
+	font-style: italic;
+}
+
+.cnt3 {
+	border-style: dotted;
+	margin-top: 10px;
+	padding: 30px;
+	padding-left: 10%;
+	padding-right: 10%;
+	width: 60%;
+	margin:auto
+}
+
+.cnt3 p::selection{
+	color: red;
+	
+	font-style: italic;
+}
+.cnt4 {
+	border-style: dotted;
+	margin-top: 10px;
+	padding: 30px;
+	padding-left: 10%;
+	padding-right: 10%;
+	width: 60%;
+	margin:auto
+}
+
+.cnt4 #green::placeholder{
+	color: white;
+	background-color: green;
+	font-style: italic;
+}
+.cnt4 #white::placeholder{
+	color: green;
+	background-color: white;
+	font-style: italic;
+}
+.cnt5 {
+	border-style: dotted;
+	margin-top: 10px;
+	padding: 30px;
+	padding-left: 10%;
+	padding-right: 10%;
+	width: 60%;
+	margin:auto
+}
+
+.cnt5 input:focus{
+	color: white;
+	background-color: green;
+	font-style: italic;
+}
+.cnt6 {
+	border-style: dotted;
+	margin-top: 10px;
+	padding: 30px;
+	padding-left: 10%;
+	padding-right: 10%;
+	width: 60%;
+	margin:auto
+}
+
+.cnt6 p:before{
+	color: red;
+	content: "начало: ";
+	font-style: italic;
+}
+.cnt6 p:after{
+	color: green;
+	content: "конец";
+	font-style: italic;
+}
+.cnt7 {
+	border-style: dotted;
+	margin-top: 10px;
+	padding: 30px;
+	padding-left: 10%;
+	padding-right: 10%;
+	width: 60%;
+	margin:auto;
+	counter-reset: heading;
+}
+
+.cnt7 p:before{
+	content: "Абзац №" counter(heading) " ";
+	font-style: italic;
+	counter-increment: heading;
+}
+.cnt8 {
+	border-style: dotted;
+	margin-top: 10px;
+	padding: 30px;
+	padding-left: 10%;
+	padding-right: 10%;
+	width: 60%;
+	margin:auto;
+	counter-reset: my-counter 7;
+}
+
+.cnt8 p:before{
+	content: "Абзац №" counter(my-counter) " ";
+	font-style: italic;
+	counter-increment: my-counter 1;
+}
+.cnt9 {
+	border-style: dotted;
+	margin-top: 10px;
+	padding: 30px;
+	padding-left: 10%;
+	padding-right: 10%;
+	width: 60%;
+	margin:auto;
+	counter-reset: my-counter;
+}
+
+.cnt9 p:before{
+	counter-increment: my-counter 1;
+	content: "Абзац №" counter(my-counter) " ";
+	font-style: italic;
+	
+}
+.cnt9 #res{
+	counter-reset: my-counter;
+	content: "Абзац №" counter(my-counter) " ";
+	font-style: italic;
+	
+}
+.cnt10 {
+	border-style: dotted;
+	margin-top: 10px;
+	padding: 30px;
+	padding-left: 10%;
+	padding-right: 10%;
+	width: 60%;
+	margin:auto;
+	counter-reset: my-counter;
+}
+
+.cnt10 p:before{
+	counter-increment: my-counter 1;
+	content: "Абзац №" counter(my-counter) " ";
+	font-style: italic;
+	
+}
+.cnt10 #res{
+	counter-reset: my-counter 17;
+	content: "Абзац №" counter(my-counter) " ";
+	font-style: italic;
+	
+}
+.cnt11 {
+	border-style: dotted;
+	margin-top: 10px;
+	padding: 30px;
+	padding-left: 10%;
+	padding-right: 10%;
+	width: 60%;
+	margin:auto;
+	counter-reset: my-counter;
+}
+
+.cnt11 li:first-child{
+	color:red
+	
+}
+.cnt11 li:last-child{
+	color:green
+	
+}
+.cnt11 #res{
+	counter-reset: my-counter 17;
+	content: "Абзац №" counter(my-counter) " ";
+	font-style: italic;
+	
+}
+.cnt12 {
+	border-style: dotted;
+	margin-top: 10px;
+	padding: 30px;
+	padding-left: 10%;
+	padding-right: 10%;
+	width: 60%;
+	margin:auto;
+	counter-reset: my-counter;
+}
+
+.cnt12 li:first-child{
+	color:red
+	
+}
+.cnt12 li:last-child{
+	color:green
+	
+}
+.cnt12 #res{
+	counter-reset: my-counter 17;
+	content: "Абзац №" counter(my-counter) " ";
+	font-style: italic;
+	
+}
